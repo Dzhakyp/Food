@@ -1,0 +1,121 @@
+.pizza__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 20px;
+  max-width: calc(100vw - 48px);
+  text-align: center;
+  align-items: center;
+  svg {
+    display: block;
+    margin: 0 auto;
+  }
+}
+.pizza__title {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 20px;
+}
+.types {
+  display: block;
+  margin: 0 auto;
+  background-color: #f3f3f3;
+  border: 0px solid #f3f3f3;
+  border-radius: 10px;
+  width: 300px;
+  align-items: center;
+  text-align: center;
+}
+.type__list {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+  margin-top: 30px;
+  background-color: #f3f3f3;
+  align-items: center;
+  text-align: center;
+}
+
+.types__item {
+  margin-top: 10px;
+  background-color: #f9f9f9;
+  padding: 10px 25px;
+  border-radius: 10px;
+  margin-right: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.1s ease-in-out;
+  &:hover {
+    background-color: darken(#f9f9f9, 2%);
+  }
+
+  &:active {
+    background-color: darken(#f9f9f9, 5%);
+  }
+
+  &.active {
+    background-color: #fff;
+    color: black;
+  }
+}
+.sizes__list {
+  display: flex;
+  justify-content: space-around;
+}
+.sizes__item {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  background-color: #f9f9f9;
+  padding: 7px 25px;
+  border-radius: 10px;
+
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.1s ease-in-out;
+  &:hover {
+    background-color: darken(#f9f9f9, 2%);
+  }
+
+  &:active {
+    background-color: darken(#f9f9f9, 5%);
+  }
+
+  &.active {
+    background-color: #fff;
+    color: black;
+  }
+}
+.pizzas_add {
+  margin: 0 auto;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+.pizza__btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: auto;
+
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  padding: 10px 15px;
+  border-radius: 30px;
+  cursor: pointer;
+  border: 1px solid #eb5a1e;
+  background: #ffffff;
+  color: #eb5a1e;
+}
+.pizza__count {
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  padding: 2px 6px;
+  background: #eb5a1e;
+  border-radius: 50%;
+  color: #ffffff;
+}

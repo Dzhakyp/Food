@@ -1,0 +1,41 @@
+.root {
+  position: relative;
+  margin: 0 auto;
+}
+.input {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 12px 45px;
+  margin-left: 42px;
+  width: 400px;
+  border-radius: 10px;
+  font-size: 16px;
+  transition: all 0.15s ease-in-out;
+  &:focus {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    width: 500px;
+  }
+}
+.icon_search {
+  width: 24px;
+  height: 24px;
+  opacity: 0.5;
+  position: absolute;
+  left: 50px;
+  top: 12px;
+  opacity: 0.3;
+  &:hover {
+    opacity: 0.6;
+  }
+}
+.icon_delete {
+  width: 18px;
+  height: 18px;
+  opacity: 0.3;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.8;
+  }
+}
